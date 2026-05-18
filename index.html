@@ -1,17 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Patent Certificate</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Patent Certificate | VTOL Drone Wing</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg,#0f172a,#020617);
+            color:white;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            overflow:hidden;
+        }
+
+        .container{
+            width:90%;
+            max-width:900px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(12px);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:25px;
+            padding:60px;
+            text-align:center;
+            box-shadow:0 0 40px rgba(0,0,0,0.5);
+            animation: fadeIn 1.2s ease;
+        }
+
+        .badge{
+            display:inline-block;
+            padding:10px 20px;
+            background:#2563eb;
+            border-radius:50px;
+            font-size:14px;
+            margin-bottom:25px;
+            letter-spacing:1px;
+        }
+
+        h1{
+            font-size:52px;
+            margin-bottom:20px;
+            line-height:1.2;
+        }
+
+        .highlight{
+            color:#38bdf8;
+        }
+
+        p{
+            color:#cbd5e1;
+            font-size:18px;
+            line-height:1.8;
+            margin-bottom:40px;
+        }
+
+        .buttons{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .btn{
+            text-decoration:none;
+            padding:16px 32px;
+            border-radius:12px;
+            font-size:16px;
+            font-weight:bold;
+            transition:0.3s ease;
+        }
+
+        .primary{
+            background:#38bdf8;
+            color:black;
+        }
+
+        .primary:hover{
+            transform:translateY(-4px);
+            box-shadow:0 10px 20px rgba(56,189,248,0.4);
+        }
+
+        .secondary{
+            border:1px solid rgba(255,255,255,0.2);
+            color:white;
+        }
+
+        .secondary:hover{
+            background:rgba(255,255,255,0.08);
+        }
+
+        .footer{
+            margin-top:45px;
+            color:#94a3b8;
+            font-size:14px;
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(30px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        @media(max-width:768px){
+
+            .container{
+                padding:40px 25px;
+            }
+
+            h1{
+                font-size:34px;
+            }
+
+            p{
+                font-size:16px;
+            }
+
+        }
+
+    </style>
+
 </head>
-<body style="font-family: Arial; text-align:center; margin-top:50px;">
 
-    <h1>My Patent Certificate</h1>
+<body>
 
-    <p>
-        <a href="Patent_Certificate.pdf" target="_blank">
-            View Patent Certificate
-        </a>
-    </p>
+    <div class="container">
+
+        <div class="badge">
+            INNOVATION • AEROSPACE • VTOL
+        </div>
+
+        <h1>
+            Cropped Delta Wing for <br>
+            <span class="highlight">VTOL Drone Patent</span>
+        </h1>
+
+        <p>
+            Official patent certification and research documentation 
+            showcasing advanced aerodynamic wing design concepts 
+            for Vertical Take-Off and Landing drone systems.
+        </p>
+
+        <div class="buttons">
+
+            <a href="Patent_Certificate.pdf" target="_blank" class="btn primary">
+                View Patent Certificate
+            </a>
+
+            <a href="Patent_Report.pdf" target="_blank" class="btn secondary">
+                Research Paper
+            </a>
+
+        </div>
+
+        <div class="footer">
+            © 2026 Saaim Saad | Aerospace Innovation Portfolio
+        </div>
+
+    </div>
 
 </body>
 </html>
